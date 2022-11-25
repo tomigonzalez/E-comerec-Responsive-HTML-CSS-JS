@@ -173,23 +173,20 @@ const toggleCart = () => {
   
   //Funciones del carrito
   const renderCartProduct = (cartProduct) => {
-    const { id, img, name, desc, price, quantity } = cartProduct;
+    const { id, img, name, price, quantity } = cartProduct;
     return `    
-        <div class="card card--cart box-shadow">
-            <img
-              class="card__img--cart"
-              src="${img}"
-              alt="pizza recomendada"/>
-            <div class="card__info">
-              <p class="card__name">${name}</p>
-              <p class="card__description">${desc}</p>
-              <p class="card__price gradient-text">$${price}</p>
-            </div>
-            <div class="card__buttons">
-              <button class="btn btn--cart down" data-id="${id}">-</button>
-              <span class="card__quantity">${quantity} USD</span>
-              <button class="btn btn--cart up" data-id="${id}">+</button>
-            </div>
+              <div class="card3 card--cart box-shadow">
+                  <img class="card__img--cart" src="${img}"alt="pizza recomendada"/>
+              <div class="card__info">
+                  <p class="card__name">${name}</p>
+              
+                  <p class="card__price gradient-text">$${price}</p>
+              </div>
+              <div class="card__buttons">
+                  <button class="btn btn--cart down" data-id="${id}">-</button>
+                  <span class="card__quantity">${quantity}</span>
+                  <button class="btn btn--cart up" data-id="${id}">+</button>
+              </div>
           </div>
           `;
   };
