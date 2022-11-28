@@ -168,7 +168,7 @@ const products = [
     {
       id: 20,
       img: "img/Jordan11retro.png",
-      name: "JORDAN 11 RETRO",
+      name: "Jordan 11 Retro",
      
       price: 350,
       category: "retro",
@@ -176,7 +176,7 @@ const products = [
     {
       id: 21,
       img: "img/Jordan6Retro.png",
-      name: "JORDAN 6 RETRO",
+      name: "Jordan 6 Retro",
      
       price: 360,
       category: "retro",
