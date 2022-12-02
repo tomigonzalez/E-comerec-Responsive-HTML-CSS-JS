@@ -27,6 +27,14 @@ const btnOpenCart = document.getElementById("open");
 //Boton cerrar carrito
 const btnCloseCart = document.getElementById("close");
 
+//bottom
+const navToggle = document.querySelector(".nav-toggle");
+//menu ul
+const navMenu = document.querySelector(".nav-menu");
+//body
+const body = document.getElementById("body");
+
+
 
 //Funcion para buscar en localStorage
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -152,23 +160,32 @@ const applyFilter = (e) => {
 
 
 // // Carrito
+
 // //Abrir-cerrar carrito con overlay
 const toggleCart = () => {
     productsCart.classList.toggle("is-active");
     overlay.classList.toggle("show-overlay");
+  
   };
   
   //Cerrar el carrito cuando scrolleamos
   const closeOnScroll = () => {
-    if (!productsCart.classList.contains("is-active")) return;
+    navMenu.classList.remove("nav-menu_visible")
+    if (!productsCart.classList.contains("is-active")  ) return;
+
     productsCart.classList.remove("is-active");
     overlay.classList.remove("show-overlay");
+    
+
   };
   
   //Cerrar el carrito cuando hacemos click fuera del carrito
   const closeOnOverlayClick = () => {
     productsCart.classList.remove("is-active");
     overlay.classList.remove("show-overlay");
+  
+
+    
   };
   
   //Funciones del carrito
@@ -381,10 +398,28 @@ const toggleCart = () => {
     );
   };
 
+//menu hamburguesaa
+const animateBars = () => {
+   
 
+  
+}
+
+  const menuBurger = () => {
+    
+    navMenu.classList.toggle("nav-menu_visible");
+  
+    if (navMenu.classList.contains("nav-menu_visible")) {
+      navToggle.setAttribute("aria-label", "Cerrar menú");
+    } else {
+      navToggle.setAttribute("aria-label", "Abrir menú");
+    }
+  }
+  
 
 const init = () => {
     renderProducts();
+    navToggle.addEventListener("click", menuBurger);
     categories.addEventListener("click", applyFilter);
     btnOpenCart.addEventListener("click", toggleCart);
     btnCloseCart.addEventListener("click", toggleCart);
