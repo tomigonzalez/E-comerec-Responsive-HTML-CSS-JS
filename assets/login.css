@@ -115,3 +115,13 @@ small {font-weight: 600;
 .contenidoform.success input {
   border-bottom: 1px solid #28a745;
 }
+@media (max-width: 1000px){
+  section {
+    width: 65%;
+  }
+}
+@media (max-width: 500px){
+  section {
+    width: 85%;
+  }
+}
