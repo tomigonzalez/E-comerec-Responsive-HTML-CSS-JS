@@ -259,9 +259,11 @@ i:hover {color: #FBB239;
               }
 .name-product1 {ALIGN-SELF: CENTER;
                 margin-left: 10%;
+                font-size: 0.82REM;
                 }
 .info-compras div {display: flex;   
-    WIDTH: 15%;            
+    WIDTH: 60%;   
+    margin: 2% ;    
                    }
 .info-compras span{width: 0.01%;
 height: 40%;
@@ -409,7 +411,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .btn1 {    color: #FBB239;
     text-decoration: none;
     font-size: 0.9REM;
-    width: 70%;
+    width: 100%;
     border: NONE;
     height: 20%;
             }
@@ -449,7 +451,7 @@ footer{width: 100%;
 .footer_info--large{width: 35%;
                     PADDING-LEFT: 5%;
                     height: 100%;
-                   
+                    MARGIN-RIGHT: 10%;
                     display: flex;
                     flex-flow: column;
                     }
@@ -930,9 +932,9 @@ ul a {height: 10%;}
 #princip{ scroll-margin-top: 7.81ex;}
 
 .recomend-img {
-  width: 80%;
+  width: 70%;
     PLACE-CONTENT: CENTER;
-    MARGIN: 0;}
+    }
 .recomend-img img {
     transform: none;
     height: 90%;
@@ -956,11 +958,11 @@ ul a {height: 10%;}
             HEIGHT: 50%;}
 }
 @media (max-width: 570px){
-.recomend-desc{    height: 80%;
+.fa-heart{margin-right: 2%;}
+.recomend-desc{ height: 100%;
+  width: 90%;
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  text-align: CENTER}
+  flex-flow: column;}
 .name {    font-size: x-small;}
 .number {
   width: 38%;
@@ -980,9 +982,11 @@ ul a {height: 10%;}
 .card__name {    WIDTH: 150PX;}
 .slider-position {
   GAP: 1%;
-  height: 60%;}
+    height: 50%;
+    WIDTH: 90%;}
   .slider-recomend {
-    width: 50%;}
+    width: 100%;
+    height: 100%;}
     .cont-product {
       width: 70%;
   }
